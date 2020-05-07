@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+    <title>PhoneNumber</title>
+</head>
+<body>
+<form th:object="${user}">
+    <h1>Your first name :<span th:text="${user.firstName}"></span></h1>
+    <h1>Your last name :<span th:text="${user.lastName}"></span></h1>
+    <h1>Your phone number :<span th:text="${user.phoneNumber}"></span></h1>
+    <h1>Your age :<span th:text="${user.age}"></span></h1>
+    <h1>Your email :<span th:text="${user.email}"></span></h1>
+</form>
+</body>
+</html>
